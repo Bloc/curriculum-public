@@ -1,0 +1,13 @@
+if (currentlyPlayingSongNumber !== songNumber) {
+    setSong(songNumber);
+    currentSoundFile.play();
+    updateSeekBarWhileSongPlays();
+    
++   var $volumeFill = $('.volume .fill');
++   var $volumeThumb = $('.volume .thumb');
++   $volumeFill.width(currentVolume + '%');
++   $volumeThumb.css({left: currentVolume + '%'});
+
+    $(this).html(pauseButtonTemplate);
+    updatePlayerBarSong();
+}
