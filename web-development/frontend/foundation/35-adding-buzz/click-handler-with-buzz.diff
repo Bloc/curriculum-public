@@ -1,0 +1,40 @@
+    var clickHandler = function() {
+
+        var songNumber = parseInt($(this).attr('data-song-number'));
+
+        if (currentlyPlayingSongNumber !== null) {
+            // Revert to song number for currently playing song because user started playing new song.
+            var currentlyPlayingCell = getSongNumberCell(currentlyPlayingSongNumber);
+            
+            currentlyPlayingCell = getSongNumberCell(currentlyPlayingSongNumber);
+            currentlyPlayingCell.html(currentlyPlayingSongNumber);
+        }
+        
+         if (currentlyPlayingSongNumber !== songNumber) {
+             // Switch from Play -> Pause button to indicate new song is playing.
+             setSong(songNumber);
++            currentSoundFile.play();
++
+             $(this).html(pauseButtonTemplate);
+             updatePlayerBarSong();
+         }
+ 
+         else if (currentlyPlayingSongNumber === songNumber) {
+-            // Switch from Pause -> Play button to pause currently playing song.
+-            $(this).html(playButtonTemplate);
+-            $('.left-controls .play-pause').html(playerBarPlayButton);
+-            currentlyPlayingSongNumber = null;
+-            currentSongFromAlbum = null;
++            if (currentSoundFile.isPaused()) {
++                $(this).html(pauseButtonTemplate);
++                $('.left-controls .play-pause').html(playerBarPauseButton);
++                currentSoundFile.play();
++            } else {
++                $(this).html(playButtonTemplate);
++                $('.left-controls .play-pause').html(playerBarPlayButton);
++                currentSoundFile.pause();   
++            }
++
+         }
+ 
+     };
