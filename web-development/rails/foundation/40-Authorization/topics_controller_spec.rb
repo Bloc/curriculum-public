@@ -77,7 +77,7 @@ RSpec.describe TopicsController, type: :controller do
   context "member user" do
     before do
       user = User.create!(name: "Bloccit User", email: "user@bloccit.com", password: "helloworld", role: :member)
-      log_in(user)
+      create_session(user)
     end
 
     describe "GET index" do
@@ -151,7 +151,7 @@ RSpec.describe TopicsController, type: :controller do
   context "admin user" do
     before do
       user = User.create!(name: "Bloccit User", email: "user@bloccit.com", password: "helloworld", role: :admin)
-      log_in(user)
+      create_session(user)
     end
 
     describe "GET index" do
