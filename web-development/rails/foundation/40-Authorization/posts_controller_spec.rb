@@ -29,21 +29,21 @@ RSpec.describe PostsController, type: :controller do
     describe "GET new" do
       it "returns http redirect" do
         get :new, topic_id: my_topic.id
-        expect(response).to redirect_to(sign_in_path)
+        expect(response).to redirect_to(new_session_path)
       end
     end
 
     describe "POST create" do
       it "returns http redirect" do
         post :create, topic_id: my_topic.id, post: {title: RandomData.random_sentence, body: RandomData.random_paragraph}
-        expect(response).to redirect_to(sign_in_path)
+        expect(response).to redirect_to(new_session_path)
       end
     end
 
     describe "GET edit" do
       it "returns http redirect" do
         get :edit, topic_id: my_topic.id, id: my_post.id
-        expect(response).to redirect_to(sign_in_path)
+        expect(response).to redirect_to(new_session_path)
       end
     end
 
@@ -53,21 +53,21 @@ RSpec.describe PostsController, type: :controller do
         new_body = RandomData.random_paragraph
 
         put :update, topic_id: my_topic.id, id: my_post.id, post: {title: new_title, body: new_body}
-        expect(response).to redirect_to(sign_in_path)
+        expect(response).to redirect_to(new_session_path)
       end
     end
 
     describe "DELETE destroy" do
       it "returns http redirect" do
         delete :destroy, topic_id: my_topic.id, id: my_post.id
-        expect(response).to redirect_to(sign_in_path)
+        expect(response).to redirect_to(new_session_path)
       end
     end
   end
 
   context "member user doing CRUD on a post they don't own" do
     before do
-      log_in(other_user)
+      create_session(other_user)
     end
 
     describe "GET show" do
@@ -148,7 +148,7 @@ RSpec.describe PostsController, type: :controller do
 
   context "member user doing CRUD on a post they own" do
     before do
-      log_in(my_user)
+      create_session(my_user)
     end
 
     describe "GET show" do
@@ -261,7 +261,7 @@ RSpec.describe PostsController, type: :controller do
   context "admin user doing CRUD on a post they don't own" do
     before do
       other_user.admin!
-      log_in(other_user)
+      create_session(other_user)
     end
 
     describe "GET show" do
