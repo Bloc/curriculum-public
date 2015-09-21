@@ -18,7 +18,7 @@ var nextSong = function() {
 
     // Update the Player Bar information
     $('.currently-playing .song-name').text(currentSongFromAlbum.name);
-    $('.currently-playing .artist-name').text(currentAlbum.name);
+    $('.currently-playing .artist-name').text(currentAlbum.artist);
     $('.currently-playing .artist-song-mobile').text(currentSongFromAlbum.name + " - " + currentAlbum.name);
     $('.left-controls .play-pause').html(playerBarPauseButton);
     
