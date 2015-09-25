@@ -14,12 +14,10 @@
              // Switch from Play -> Pause button to indicate new song is playing.
              setSong(songNumber);
 +            currentSoundFile.play();
-+
              $(this).html(pauseButtonTemplate);
+             currentSongFromAlbum = currentAlbum.songs[songNumber - 1];
              updatePlayerBarSong();
-         }
- 
-         else if (currentlyPlayingSongNumber === songNumber) {
+         } else if (currentlyPlayingSongNumber === songNumber) {
 -            // Switch from Pause -> Play button to pause currently playing song.
 -            $(this).html(playButtonTemplate);
 -            $('.left-controls .play-pause').html(playerBarPlayButton);
