@@ -1,7 +1,7 @@
 ...
 var setCurrentAlbum = function(album) {
 ...
-}
+};
 
 var updatePlayerBarSong = function() {
 
