@@ -1,10 +1,4 @@
-...
-    return currentParent;
-
-};
-
 var getSongItem = function(element) {
-    
     switch (element.className) {
         case 'album-song-button':
         case 'ion-play':
@@ -19,10 +13,5 @@ var getSongItem = function(element) {
             return element;
         default:
             return;
-    }
-    
+    }  
 };
-
-// Elements we'll be adding listeners to
-var songListContainer = document.getElementsByClassName('album-view-song-list')[0];
-...
