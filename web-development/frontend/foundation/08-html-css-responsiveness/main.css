@@ -15,10 +15,6 @@ body {
     min-height: 100%;
 }
 
-body.landing {
-    background-color: rgb(58,23,63);
-}
-
 .navbar {
     padding: 0.5rem;
     background-color: rgb(101,18,95);
