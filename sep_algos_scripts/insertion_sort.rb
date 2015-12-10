@@ -1,23 +1,23 @@
 
-def insertion_sort(array)
-  sorted_array = [array.delete_at(0)]
+def insertion_sort(collection)
+  sorted_collection = [collection.delete_at(0)]
 
-  for val in array
-    sorted_array_index = 0
-    while sorted_array_index < sorted_array.length
-      if val <= sorted_array[sorted_array_index]
-        sorted_array.insert(sorted_array_index, val)
+  for val in collection
+    sorted_collection_index = 0
+    while sorted_collection_index < sorted_collection.length
+      if val <= sorted_collection[sorted_collection_index]
+        sorted_collection.insert(sorted_collection_index, val)
         break
-      elsif sorted_array_index == sorted_array.length - 1
-        sorted_array.insert(sorted_array_index+1, val)
+      elsif sorted_collection_index == sorted_collection.length - 1
+        sorted_collection.insert(sorted_collection_index + 1, val)
         break
       end
-      sorted_array_index += 1
+      sorted_collection_index += 1
     end
   end
 
-  sorted_array
+  sorted_collection
 end
 
-array = ["E", "C", "A", "B", "F", "G", "D"]
-puts insertion_sort(array)
+collection = ["E", "C", "A", "B", "F", "G", "D"]
+puts insertion_sort(collection)
