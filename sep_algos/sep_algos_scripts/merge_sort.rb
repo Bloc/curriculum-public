@@ -29,23 +29,19 @@ def ms(collection)
   puts "Collection Size: #{collection.length}, recursive calls: #{$i}"
 end
 
-collection = ["E"]
-ms(collection)
+def create_collection(size)
+  collection = Array.new(size) { |i| rand(1000) } 
+  collection
+end
 
-collection = ["E", "C"]
-ms(collection)
-
-collection = ["E", "C", "A", "B"]
-ms(collection)
-
-collection = ["E", "C", "A", "B", "F", "G", "D", "H"]
-ms(collection)
-
-collection = ["E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H"]
-ms(collection)
-
-collection = ["E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H"]
-ms(collection)
-
-collection = ["E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H"]
-ms(collection)
+ms(create_collection(1))
+ms(create_collection(2))
+ms(create_collection(4))
+ms(create_collection(8))
+ms(create_collection(16))
+ms(create_collection(32))
+ms(create_collection(64))
+ms(create_collection(128))
+ms(create_collection(256))
+ms(create_collection(512))
+ms(create_collection(1024))
