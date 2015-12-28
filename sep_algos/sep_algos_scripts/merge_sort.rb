@@ -1,11 +1,12 @@
-
 def merge_sort(collection)
   if collection.length <= 1
     collection
   else
     mid = (collection.length / 2).floor
     left = merge_sort(collection[0..mid - 1])
+    $i = $i + 1
     right = merge_sort(collection[mid..collection.length])
+    $i = $i + 1
     merge(left, right)
   end
 end
@@ -22,6 +23,29 @@ def merge(left, right)
   end
 end
 
-collection = ["E","C", "A", "B", "F", "G", "D"]
-collection = merge_sort(collection)
-puts collection
+def ms(collection)
+  $i = 0
+  merge_sort(collection)
+  puts "Collection Size: #{collection.length}, recursive calls: #{$i}"
+end
+
+collection = ["E"]
+ms(collection)
+
+collection = ["E", "C"]
+ms(collection)
+
+collection = ["E", "C", "A", "B"]
+ms(collection)
+
+collection = ["E", "C", "A", "B", "F", "G", "D", "H"]
+ms(collection)
+
+collection = ["E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H"]
+ms(collection)
+
+collection = ["E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H"]
+ms(collection)
+
+collection = ["E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H", "E", "C", "A", "B", "F", "G", "D", "H"]
+ms(collection)
