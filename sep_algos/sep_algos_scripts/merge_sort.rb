@@ -34,14 +34,7 @@ def create_collection(size)
   collection
 end
 
-ms(create_collection(1))
-ms(create_collection(2))
-ms(create_collection(4))
-ms(create_collection(8))
-ms(create_collection(16))
-ms(create_collection(32))
-ms(create_collection(64))
-ms(create_collection(128))
-ms(create_collection(256))
-ms(create_collection(512))
-ms(create_collection(1024))
+for n in 0..12
+  size = 2**n
+  ms(create_collection(size))
+end
