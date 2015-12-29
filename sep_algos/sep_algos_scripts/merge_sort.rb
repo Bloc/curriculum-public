@@ -2,11 +2,10 @@ def merge_sort(collection)
   if collection.length <= 1
     collection
   else
+    $i = $i + 1
     mid = (collection.length / 2).floor
     left = merge_sort(collection[0..mid - 1])
-    $i = $i + 1
     right = merge_sort(collection[mid..collection.length])
-    $i = $i + 1
     merge(left, right)
   end
 end
@@ -34,7 +33,7 @@ def create_collection(size)
   collection
 end
 
-for n in 0..12
+for n in 0..10
   size = 2**n
   ms(create_collection(size))
 end
