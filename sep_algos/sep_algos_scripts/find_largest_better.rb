@@ -6,10 +6,10 @@ def find_largest_better(collection)
     left_element = collection[i]
     right_element = collection[collection_length - i - 1]
 
-    l = right_element > left_element ? right_element : left_element
+    larger = right_element > left_element ? right_element : left_element
 
-    if l > largest
-      largest = l
+    if larger > largest
+      largest = larger
     end
   end
 
