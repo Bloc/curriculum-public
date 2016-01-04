@@ -1,8 +1,9 @@
 def find_largest(collection)
   largest = collection[0]
-  collection.length.times do |i|
-    if collection[i] >= largest
-      largest = collection[i]
+  (1..collection.length-1).each do |i|
+    current = collection[i]
+    if current > largest
+      largest = current
     end
   end
   largest
