@@ -1,4 +1,3 @@
-<!-- { ids:[1928,1936], name:"Interview Skills: Coding on a Whiteboard", summary:"Tips and tricks to code like a master when all you have is a marker" } -->
 > “According to research, developers believe death is less frightening than ‘coding at a whiteboard.’”
 >
 > – Reza Earcher

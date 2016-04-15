@@ -1,7 +1,3 @@
-<!-- { ids:[1923,1931], name:"Prepare to Search", summary:"Narrow your focus, shore up your skills, and prepare to look for opportunities" } -->
-
-_Complete this checkpoint and the second Career Prep checkpoint (Networking) immediately after starting your Bloc program. Students who start their job search early have drastically better outcomes. The third Career Prep checkpoint (Career Marketing Documents) can be postponed until the last 25% of your program_.
-
 > “Finding a job is its own job.”
 >
 > – Job S. Eeker
@@ -23,7 +19,7 @@ To focus your projects and networking efforts, narrow your list of potential com
 <a name="by-location"></a>
 ### By Location
 
-Most software companies and the jobs they offer belong to major metropolitan areas, and you will improve your chances by moving to one. We recommend getting acquianted with professionals in your desired areas as soon as possible. Here is a list of metropolitan areas that we recommend for engineering roles:
+Most software companies and the jobs they offer belong to major metropolitan areas, and you will improve your chances by moving to one. We recommend getting acquainted with professionals in your desired areas as soon as possible. Here is a list of metropolitan areas that we recommend for engineering roles:
 
 * Metro Atlanta
 * Greater Austin

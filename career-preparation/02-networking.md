@@ -1,5 +1,3 @@
-<!-- { ids:[1924,1932], name:"Networking", summary:"Narrow your focus, shore up your skills, and prepare to look for opportunities" } -->
-
 > The single greatest "people skill" is a highly developed & authentic interest in the *other* person.
 >
 > &mdash; Bob Burg (@BobBurg) <a href="https://twitter.com/BobBurg/status/519571723310862336">October 7, 2014</a>

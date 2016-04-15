@@ -1,7 +1,3 @@
-<!-- { ids:[1925,1933], name:"Career Marketing Documents", summary:"Showcase your skills on LinkedIn, GitHub, and your résumé" } -->
-
-_This checkpoint should be started once you are 75% of the way through your track. This and the following checkpoints should be worked on concurrently with your final project. Don't put off career prep!_
-
 Everyone looking for a job in the technology industry should have:
 
 - a LinkedIn profile

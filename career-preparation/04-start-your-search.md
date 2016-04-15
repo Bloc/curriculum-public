@@ -1,4 +1,3 @@
-<!-- { ids:[1926,1934], name:"Start Your Search", summary:"Prepare your cover letter and start reaching out to employers" } -->
 > “You pass up 100% of the jobs you don’t apply for.”
 >
 > – Wayne Jobgetzky
@@ -118,7 +117,6 @@ Once you commit to this, **stick with it**. Apply every day and reach out every 
 <a name="assignment"></a>
 ## Assignment
 
-- Adjust your program’s pace to one appointment per week. Contact [help@bloc.io](mailto:help@bloc.io) to request the change.
 - If you haven't done so, create and update your profile on at least five of the [career-finding services](#where-to-find-jobs) we listed.
 - Write a [cover letter](#write-a-cover-letter) for a job listing you find interesting.
   - Submit the letter to your mentor for review.

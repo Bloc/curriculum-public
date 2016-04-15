@@ -1,5 +1,3 @@
-<!-- { ids:[1927,1935], name:"Interview Skills: Discussing Technical Topics", summary:"How to shine in a technical interview" } -->
-
 During your application process you’re likely to have at least one *technical interview*. You can encounter technical questions during any phase of your application. We’ve known interviewers to ask students technical questions during phone screens and in-person interviews at any round.
 
 Unlike code challenges, these questions don’t test your ability to implement a specific algorithm or feature. Instead, employers ask them to assess your familiarity with different technologies.

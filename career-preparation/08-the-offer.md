@@ -1,4 +1,3 @@
-<!-- { ids:[1930,1938], name:"The Offer", summary:"Tips to secure the right role for you" } -->
 When you receive your first offer, you reel with excitement. You celebrate that moment and feel pride for everything you've accomplished. But keeping a cool head is just as important as going nuts with celebratory fist-pumps. All job offers come with pros and cons. This checkpoint will help you hang onto your limbs as you navigate the offer minefield.
 
 - [Evaluate the Offer](#evaluate-the-offer)
@@ -124,8 +123,6 @@ If negotiations stall at a salary that you find less-than-satisfactory, try one 
 
 <a name="assignment"></a>
 ## Assignment
-
-**Do not accept a job offer before speaking with Student Outcomes.**
 
 - Determine what salary range you want and discuss it with your mentor.
 - Figure out which fringe benefits matter the most to you: health insurance, free food, travel compensation, working from home, etc.

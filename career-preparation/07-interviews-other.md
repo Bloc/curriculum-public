@@ -1,4 +1,3 @@
-<!-- { ids:[1929,1937], name:"Interview Skills: Modern Interview Methods", summary:"Prepare for a handful of non-traditional interviews" } -->
 The standard process for most organizations includes an initial phone screen followed by an onsite interview. While most companies follow this path, others choose to diversify their hiring process with modern qualitative techniques.
 
 - [Pair Programming](#pair-programming)
