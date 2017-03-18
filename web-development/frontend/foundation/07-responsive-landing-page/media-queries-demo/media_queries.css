@@ -1,0 +1,33 @@
+/*
+ * ~Logical Operators~
+ *
+ * `only`, `not`, `and`, `or`, or a comma
+ */
+
+h2 {
+    width: 100%;
+    font-size: 24px;
+    color: black;
+}
+
+@media only screen
+    and (min-width: 320px) {
+    h2:after {
+        content: "Our device is at least 320px wide right now.";   
+    }
+}
+
+@media only screen
+    and (min-width: 768px) {
+    h2:after {
+        content: "This screen must be an iPad";   
+    }
+}
+
+@media only screen
+    and (min-width: 320px)
+    and (orientation: landscape) {
+    h2:after {
+        content: "We must be in landscape mode now.";   
+    }
+}
